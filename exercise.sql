@@ -1,2 +1,2 @@
-SELECT *, date() as NEXT_EXPIRE_DATE FROM Grocery
-WHERE date() <= date();
+SELECT * FROM Grocery
+WHERE DATE(NEXT_EXPIRE_DATE) <= DATE();
